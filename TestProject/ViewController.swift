@@ -13,6 +13,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .blue
     }
+    
+    private func test() {
+        print("test")
+    }
 
 
 }
