@@ -8,9 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let checker = CheckWord()
+    
     @IBOutlet var greetingsLabel: UILabel!
     @IBOutlet var summLabel: UILabel!
     @IBOutlet var guessLabel: UILabel!
+    @IBOutlet var helloLabel: UILabel!
     var secretNumber = -1
     
     override func viewDidLoad() {
@@ -42,7 +45,7 @@ class ViewController: UIViewController {
     
     @IBAction func guessTheNumberStart(_ sender: Any) {
         let guessAlert = UIAlertController(title: "Guess game", message: "Please enter number from 1 to 10", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Try!", style: .default) { action in
+        let action = UIAlertAction(title: "Try!", style: .default) { _ in
             guard let userInput = Int(guessAlert.textFields?.first?.text ?? "0") else {
                 self.guessLabel.text = "Value should be an Integer"
                 self.guessLabel.sizeToFit()
@@ -61,7 +64,21 @@ class ViewController: UIViewController {
         
         guessAlert.addTextField()
         guessAlert.addAction(action)
-        self.present(guessAlert, animated: true)
+        present(guessAlert, animated: true)
+    }
+    
+    // MVC task
+    @IBAction func checkUserWord(_ sender: Any) {
+        let helloAlert = UIAlertController(title: "Enter world", message: "Please enter something like Hello", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Check", style: .default) { _ in
+            let userInput = helloAlert.textFields?.first?.text
+            self.checker.setWord(newWord: userInput ?? "")
+            self.helloLabel.text = self.checker.convert()
+        }
+        
+        helloAlert.addTextField()
+        helloAlert.addAction(action)
+        present(helloAlert, animated: true)
     }
     
     func showAlert(title: String, message: String, style: UIAlertController.Style) {
@@ -79,6 +96,6 @@ class ViewController: UIViewController {
     }
     
     func generateNumber() {
-        self.secretNumber = Int.random(in: 1...9)
+        secretNumber = Int.random(in: 1 ... 9)
     }
 }

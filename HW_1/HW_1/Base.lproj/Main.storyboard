@@ -55,6 +55,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WH6-Y1-S6e">
+                                <rect key="frame" x="22" y="458" width="128" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hello checker"/>
+                                <connections>
+                                    <action selector="checkUserWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J32-5H-UUm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click on the Hello button to check" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsW-hd-0HG">
+                                <rect key="frame" x="163" y="465" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -62,6 +78,7 @@
                     <connections>
                         <outlet property="greetingsLabel" destination="yC9-nT-mxs" id="wgz-nK-h6L"/>
                         <outlet property="guessLabel" destination="94v-In-N17" id="SHH-Jj-gbb"/>
+                        <outlet property="helloLabel" destination="qsW-hd-0HG" id="JGS-RY-XhD"/>
                         <outlet property="summLabel" destination="00L-YX-wcx" id="l4y-C8-sEB"/>
                     </connections>
                 </viewController>
