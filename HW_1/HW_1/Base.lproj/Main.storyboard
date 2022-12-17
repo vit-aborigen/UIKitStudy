@@ -42,7 +42,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00L-YX-wcx">
-                                <rect key="frame" x="64" y="357" width="57" height="21"/>
+                                <rect key="frame" x="57" y="347" width="57" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guess the number answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94v-In-N17">
+                                <rect key="frame" x="169" y="346" width="208" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -53,7 +60,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="GreetingsLabel" destination="yC9-nT-mxs" id="wgz-nK-h6L"/>
+                        <outlet property="greetingsLabel" destination="yC9-nT-mxs" id="wgz-nK-h6L"/>
+                        <outlet property="guessLabel" destination="94v-In-N17" id="SHH-Jj-gbb"/>
                         <outlet property="summLabel" destination="00L-YX-wcx" id="l4y-C8-sEB"/>
                     </connections>
                 </viewController>
