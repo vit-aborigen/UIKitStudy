@@ -13,6 +13,8 @@
 		9F02FAFE294BBDF700D3D6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F02FAFC294BBDF700D3D6A2 /* Main.storyboard */; };
 		9F02FB00294BBDF800D3D6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F02FAFF294BBDF800D3D6A2 /* Assets.xcassets */; };
 		9F02FB03294BBDF800D3D6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F02FB01294BBDF800D3D6A2 /* LaunchScreen.storyboard */; };
+		9F02FB11294E771A00D3D6A2 /* WordReverterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02FB10294E771A00D3D6A2 /* WordReverterModel.swift */; };
+		9F02FB17294E83CD00D3D6A2 /* WordReverterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02FB16294E83CD00D3D6A2 /* WordReverterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9F02FAFF294BBDF800D3D6A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F02FB02294BBDF800D3D6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F02FB04294BBDF800D3D6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F02FB10294E771A00D3D6A2 /* WordReverterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordReverterModel.swift; sourceTree = "<group>"; };
+		9F02FB16294E83CD00D3D6A2 /* WordReverterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordReverterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,31 @@
 			children = (
 				9F02FAF6294BBDF700D3D6A2 /* AppDelegate.swift */,
 				9F02FAF8294BBDF700D3D6A2 /* SceneDelegate.swift */,
-				9F02FAFA294BBDF700D3D6A2 /* ViewController.swift */,
+				9F02FB14294E82EB00D3D6A2 /* Controllers */,
+				9F02FB15294E82F400D3D6A2 /* Models */,
 				9F02FAFC294BBDF700D3D6A2 /* Main.storyboard */,
 				9F02FAFF294BBDF800D3D6A2 /* Assets.xcassets */,
 				9F02FB01294BBDF800D3D6A2 /* LaunchScreen.storyboard */,
 				9F02FB04294BBDF800D3D6A2 /* Info.plist */,
 			);
 			path = HW_1;
+			sourceTree = "<group>";
+		};
+		9F02FB14294E82EB00D3D6A2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F02FAFA294BBDF700D3D6A2 /* ViewController.swift */,
+				9F02FB16294E83CD00D3D6A2 /* WordReverterController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9F02FB15294E82F400D3D6A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F02FB10294E771A00D3D6A2 /* WordReverterModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F02FB17294E83CD00D3D6A2 /* WordReverterController.swift in Sources */,
 				9F02FAFB294BBDF700D3D6A2 /* ViewController.swift in Sources */,
 				9F02FAF7294BBDF700D3D6A2 /* AppDelegate.swift in Sources */,
+				9F02FB11294E771A00D3D6A2 /* WordReverterModel.swift in Sources */,
 				9F02FAF9294BBDF700D3D6A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
